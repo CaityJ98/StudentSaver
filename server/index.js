@@ -20,9 +20,9 @@ if (
   process.env.NODE_ENV === "production" ||
   process.env.NODE_ENV === "staging"
 ) {
-  app.use(express.static(path.resolve(_dirname )));
+  app.use(express.static(path.resolve(_dirname, "public" )));
   app.get("/", function (req, res) {
-    res.sendFile(path.resolve(__dirname, "index.html"));
+    res.sendFile(path.resolve(__dirname, "public", "index.html"));
   });
 }
 
