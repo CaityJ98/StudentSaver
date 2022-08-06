@@ -1,0 +1,43 @@
+.register{
+    background-image: url(('./../assets/images/regbackground.jpg'));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    .card{
+        margin-top: 10vh;
+        width: 50%;
+        height: auto;
+        
+    }
+}
+form {
+    margin: 0 auto;
+    // height: auto;
+}
+
+.auth-heading {
+    text-align: center;
+    font-family: serif;
+    padding-bottom: 20px;
+}
+
+.btnAuth {
+    margin-top: 3%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-msg-paragraph {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.bottom-msg-paragraph a:hover {
+    text-decoration: underline;
+}
+
+.form-text {
+    margin-left: 4px;
+}

@@ -1,0 +1,13 @@
+.login{
+    background-image: url(('./../assets/images/regbackground.jpg'));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    .card{
+        margin-top: 20vh;
+        width: 50%;
+        height: 50%;
+        
+    }
+}

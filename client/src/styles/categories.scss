@@ -1,0 +1,104 @@
+
+
+#categories {
+    // // float:left; 
+    // width: 15vw;
+    // display: flex;
+    // justify-content: flex-start;
+    // // flex-direction: column;
+    // margin: 0px;
+   
+}
+h2 {
+    font-weight: bold;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.catLinks{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+
+
+}
+#categories>h2 {
+    display: flex;
+    justify-content: flex-start;
+    font-family: serif;
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+
+#categories svg {
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+
+#categories a button{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#all>svg {
+    color: white;
+}
+
+#art>svg {
+    color: red;
+}
+
+#business>svg {
+    color: orange;
+}
+
+#coding>svg {
+    color: #f0f342;
+}
+
+#education>svg {
+    color: lightgreen;
+}
+
+#english>svg {
+    color: green;
+}
+
+#law>svg {
+    color: blue;
+}
+#maths>svg {
+    color: lightblue;
+}
+#nursing>svg {
+    color: rgb(154, 54, 154);
+}
+#psychology>svg {
+    color: rgb(219, 151, 219);
+}
+#science>svg {
+    color: hotpink;
+}
+.spinner {
+    text-align: center;
+}
+
+#dropdown-sort {
+    padding-bottom: 20px;
+    margin-top: -25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#dropdown-sort button {
+    border: 1px solid gray;
+    width: 110px;
+}
+
+#dropdown-sort button svg {
+    font-size: 14pt;
+}
