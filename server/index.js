@@ -18,13 +18,13 @@ connectDB();
 app.use(routes);
 if (
   process.env.NODE_ENV === "production" ||
-  process.env.NODE_ENV === "staging"
-) {
-  app.use(express.static(path.join(_dirname, "build" )));
-  app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "build", "index.html"));
-  });
+  process.env.NODE_ENV === "staging") { 
+  app.use(express.static("client/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(_dirname, "client", "build", "index.html"));
+  })
 }
+
 
 http.listen(PORT, () =>
   console.log(`Server is running at http://localhost:${PORT}...`)
