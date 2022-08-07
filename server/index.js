@@ -21,7 +21,7 @@ if (
   process.env.NODE_ENV === "staging") { 
   app.use(express.static("client/public"));
   app.get("/", (req, res) => {
-    res.sendFile(path.resolve(_dirname, "../client/public/index.html"))
+    res.sendFile(path.resolve(_dirname, "./client/public/index.html"))
   })
 }
 
