@@ -34,10 +34,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+      "postinstall": "if [ $CLIENT_ENV ]; then npm run postinstall-client; elif [ $SERVER_ENV ]; then npm run postinstall-server; else echo no environment detected, please set CLIENT_ENV or SERVER_ENV; fi",
+      "postinstall-client": "cd packages/client && npm install && npm run build",
+      "postinstall-server": "cd packages/server && npm install"
+  
   },
   "eslintConfig": {
     "extends": [
