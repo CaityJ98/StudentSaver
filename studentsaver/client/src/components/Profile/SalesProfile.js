@@ -3,7 +3,7 @@ import CurrentListings from './Sales/CurrentListings';
 import { Col, Row, Button, Form, Modal } from 'react-bootstrap';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { FaSellsy } from 'react-icons/fa'
-import EditProfile from './../../pages/EditProfile'
+import EditProfile from '../../pages/EditProfile'
 import { useNavigate, useParams } from "react-router-dom";
 
 function SalesProfile() {
