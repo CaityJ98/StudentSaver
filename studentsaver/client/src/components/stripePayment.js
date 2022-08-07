@@ -5,7 +5,7 @@ import axios from "axios";
 const StripeCheckout = () => {
   const handleToken = (totalAmount, token) => {
     try {
-      axios.post("http://localhost:5000/auth/stripe/pay", {
+      axios.post("https://student-saver-server.herokuapp.com/auth/stripe/pay", {
         token: token.id,
         amount: totalAmount
       });
