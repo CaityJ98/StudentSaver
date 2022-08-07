@@ -1,7 +1,8 @@
 [build]
   command = "npm run build"
-  base ="studentsaver/"
-  publish = "build/"
+   publish = "build/"
+  base ="client/"
+ 
 
 [[redirects]]
   from = "/*"
