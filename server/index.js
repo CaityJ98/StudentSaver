@@ -7,6 +7,7 @@ const path = require("path");
 const auth = require("./middlewares/auth");
 const stripeRouter = require("./stripe.js");
 const routes = require("./routes");
+const { publicEncrypt } = require("crypto");
 require("dotenv").config();
 require("./config/express")(app);
 require("./config/mongoose");
@@ -20,8 +21,8 @@ if (
   process.env.NODE_ENV === "production" ||
   process.env.NODE_ENV === "staging") { 
   app.use(express.static("client/build"));
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(_dirname, "client", "build", "index.html"));
+  app.get("/", (req, res) => {
+    res.sendFile(path.join(public, "index.html"));
   })
 }
 
