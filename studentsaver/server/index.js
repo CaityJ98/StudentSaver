@@ -16,14 +16,12 @@ app.use(auth());
 connectDB();
 
 app.use(routes);
-if (
-  process.env.NODE_ENV === "production" ||
-  process.env.NODE_ENV === "staging") { 
-  app.use(express.static("client/public"));
-  app.get("/", (req, res) => {
-    res.sendFile(path.resolve(_dirname, "./client/public/index.html"))
+
+  app.use(express.static("client/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(_dirname, "./client/build/index.html"))
   })
-}
+
 
 
 http.listen(PORT, () =>
