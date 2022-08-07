@@ -1,1 +1,1 @@
-web: cd studentsaver/client && node server.js
+web: cd studentsaver/client && node index.js
