@@ -1,6 +1,6 @@
 // const TABLE_NAME = 'StudentSaver';
 const config = {
-  PORT: process.env.PORT || 'https://student-saver-server.herokuapp.com/',
+  PORT: process.env.PORT || 'https://student-saver-server.herokuapp.com',
 
   DB_CONNECTION: `mongodb://localhost:27017/student-services`,
   SECRET: "secret123",
