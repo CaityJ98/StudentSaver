@@ -2,7 +2,7 @@
   "name": "studentsaver",
   "version": "0.1.0",
   "private": true,
-  
+  "homepage": ".",
   "engines": {
     "node": "v16.15.0"
   },
