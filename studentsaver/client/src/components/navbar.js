@@ -40,7 +40,7 @@ function NavigationBar() {
                 Study Tools
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item to="/student-resources-page">
+              <NavDropdown.Item href="/student-resources-page">
                 Student Resources Page
               </NavDropdown.Item>
             </NavDropdown>
