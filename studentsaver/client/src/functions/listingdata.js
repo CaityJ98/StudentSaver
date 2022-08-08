@@ -1,4 +1,4 @@
-const baseUrl = "https://student-saver-server.herokuapp.com";
+const baseUrl = "http://localhost:5000";
 
 export async function getAll(page, category, query) {
   if (query !== "" && query !== undefined) {

@@ -1,9 +1,9 @@
-const baseUrl = 'https://student-saver-server.herokuapp.com';
+const baseUrl = 'http://localhost:5000';
 
 
 export async function registerUser(userData) {
  
-   const response = await fetch('https://student-saver-server.herokuapp.com/auth/register', {
+   const response = await fetch('http://localhost:5000/auth/register', {
         method: 'POST',
         headers: {
             
@@ -19,7 +19,7 @@ export async function registerUser(userData) {
 
 
 export async function loginUser(userData = {} ) {
-    const response = await fetch('https://student-saver-server.herokuapp.com/auth/login', {
+    const response = await fetch('http://localhost:5000/auth/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ export async function loginUser(userData = {} ) {
 }
 
 export async function getUser() {
-    const response = await fetch('https://student-saver-server.herokuapp.com/auth/getUser', {credentials: 'include'});
+    const response = await fetch('http://localhost:5000/auth/getUser', {credentials: 'include'});
     return response.json();
 }
 

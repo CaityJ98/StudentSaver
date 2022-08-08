@@ -1,5 +1,5 @@
 function cors(req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "https://studentsaver.netlify.app");
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
   res.setHeader(
     "Access-Control-Allow-Methods",
     GET,
