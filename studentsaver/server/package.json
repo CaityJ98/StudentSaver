@@ -36,8 +36,8 @@
   },
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "node index.js"
-    
+    "start": "node index.js",
+    "build": "npm run build"
   
    
   
